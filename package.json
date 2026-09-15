@@ -43,5 +43,13 @@
   ],
   "publishConfig": {
     "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zxkbjtu/contextgym.git"
+  },
+  "homepage": "https://github.com/zxkbjtu/contextgym#readme",
+  "bugs": {
+    "url": "https://github.com/zxkbjtu/contextgym/issues"
   }
 }
