@@ -1,0 +1,5 @@
+node_modules/
+dist/
+.contextgym/
+*.log
+.DS_Store

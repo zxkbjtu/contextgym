@@ -1,0 +1,48 @@
+name: Bug report
+description: Report a reproducible ContextGym problem.
+title: "[bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping improve ContextGym. Please remove secrets and private repository content from logs.
+  - type: input
+    id: version
+    attributes:
+      label: ContextGym version
+      placeholder: 0.9.0
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: OS / Node / Codex versions
+      placeholder: Windows 11, Node 24.12, Codex 0.153.4
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Command
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior and redacted output
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: I removed tokens, secrets, private prompts, and sensitive repository content.
+          required: true

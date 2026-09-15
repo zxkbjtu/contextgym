@@ -1,0 +1,11 @@
+ContextGym V0.5.2
+
+Fixes false 0/1 success summaries when the verifier passes but Codex emitted a recoverable JSON error event.
+
+After replacing files, verify:
+  node dist/index.js --version
+
+Expected:
+  0.5.2
+
+You can rerun the same eval command. No need to re-run sessions parse, mine, or propose.

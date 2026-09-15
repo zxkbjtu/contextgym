@@ -1,0 +1,16 @@
+ContextGym v0.7.0
+=================
+
+New command:
+  contextgym optimize
+
+The optimize workflow refreshes privacy-safe Codex events, mines friction,
+generates a project context proposal, auto-generates deterministic probes,
+shows the planned Codex invocation count, and only runs A/B evaluation after
+interactive confirmation (or --yes).
+
+Examples:
+  node dist/index.js optimize --project "D:\\repo" --dry-run
+  node dist/index.js optimize --project "D:\\repo" --runs 3 --top 1 --yes
+
+Use --reuse-events to skip re-parsing local Codex rollout history.

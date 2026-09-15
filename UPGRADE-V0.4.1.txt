@@ -1,0 +1,18 @@
+ContextGym v0.4.1
+
+This is a proposal-quality patch. Existing .contextgym/events.jsonl and friction-report.json can be reused.
+
+1. Verify:
+   node dist/index.js --version
+
+2. Re-run proposal generation only:
+   node dist/index.js propose --project "D:\\ZYY\\proj\\NDFFN" --top 20
+
+3. Inspect the draft:
+   Get-Content .contextgym\\proposals\\NDFFN-*.md
+
+Expected improvements:
+- no mojibake from Unicode em-dashes
+- file-specific roles even if source inspection cannot open a file
+- inspected/path-fallback shown in terminal
+- compact grouped sections

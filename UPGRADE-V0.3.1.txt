@@ -1,0 +1,14 @@
+ContextGym V0.3.1 packaging fix
+
+This archive is FLAT: dist/, src/, package.json are at the archive root.
+
+From your existing project directory:
+  D:\ZYY\proj\contextgym\contextgym
+
+Extract this ZIP directly into that directory and overwrite existing files.
+Then run:
+  node dist/index.js --version
+  node dist/index.js --help
+
+Expected version: 0.3.1
+The help output must contain the `mine` command.

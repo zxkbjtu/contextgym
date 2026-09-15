@@ -1,0 +1,16 @@
+ContextGym v0.8.0
+
+New commands:
+  contextgym apply --report <optimization.json> [--dry-run|--yes]
+  contextgym report --report <optimization.json> [--open]
+
+Recommended flow after a KEEP optimization:
+  node dist/index.js report --report ".contextgym\optimizations\<report>.json" --open
+  node dist/index.js apply  --report ".contextgym\optimizations\<report>.json" --dry-run
+  node dist/index.js apply  --report ".contextgym\optimizations\<report>.json" --yes
+
+Apply is conservative:
+- requires overall verdict KEEP unless --force;
+- refuses a changed Git HEAD unless --force;
+- writes/replaces only the <!-- contextgym:start --> ... <!-- contextgym:end --> block;
+- preserves surrounding AGENTS.md content.
