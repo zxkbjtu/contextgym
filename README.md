@@ -1,24 +1,24 @@
-# ContextGym
+<div align="center">
 
-**Stop guessing what belongs in `AGENTS.md`. Test it.**
+<img src="assets/contextgym-hero.svg" alt="ContextGym — experiment-driven context optimization for coding agents" width="100%" />
 
-ContextGym learns from coding-agent history, finds recurring repository friction, proposes compact context, and runs paired A/B experiments to measure whether that context actually helps.
+<br />
 
-```text
-Agent history
-    ↓
-Friction mining
-    ↓
-Context proposal
-    ↓
-Deterministic probes
-    ↓
-Baseline vs Candidate
-    ↓
-KEEP / REJECT + Context ROI
-    ↓
-Review / Apply
+[![npm version](https://img.shields.io/npm/v/contextgym.svg)](https://www.npmjs.com/package/contextgym)
+[![CI](https://github.com/zxkbjtu/contextgym/actions/workflows/ci.yml/badge.svg)](https://github.com/zxkbjtu/contextgym/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Node.js](https://img.shields.io/badge/Node.js-%3E%3D22-5FA04E.svg)](https://nodejs.org/)
+
+</div>
+
+> **ContextGym doesn't just generate `AGENTS.md`. It tests whether the proposed context actually helps.**
+
+```bash
+npx contextgym doctor
+npx contextgym optimize --project ./my-repo
 ```
+
+ContextGym learns from coding-agent history, finds recurring repository friction, proposes compact context, and runs paired A/B experiments to measure whether that context improves agent behavior enough to justify its cost.
 
 ## Why ContextGym
 
