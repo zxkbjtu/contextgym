@@ -51,7 +51,7 @@ These are **task-specific benchmark results**, not universal performance claims.
 ### From source
 
 ```bash
-git clone <your-contextgym-repository-url>
+git clone https://github.com/zxkbjtu/contextgym.git
 cd contextgym
 npm install
 npm run build
@@ -65,11 +65,11 @@ npm link
 contextgym --version
 ```
 
-### After the npm package is published
+### Quick start with npm
 
 ```bash
-npx contextgym@latest doctor
-npx contextgym@latest optimize --project /path/to/repo --runs 3 --top 1
+npx contextgym doctor
+npx contextgym optimize --project ./my-repo
 ```
 
 ## One-command optimization
@@ -219,7 +219,7 @@ The evaluator currently uses Git worktrees, so the target project must be a Git 
 
 Requirements:
 
-- Node.js 20+
+- Node.js 22+
 - Git
 - Codex CLI for real evaluation workflows
 

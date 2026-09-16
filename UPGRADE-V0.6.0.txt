@@ -1,8 +1,0 @@
-ContextGym V0.6.0
-
-New:
-- contextgym roi --report FILE: compute task-specific Context ROI from an existing A/B report.
-- contextgym probe --project PATH: auto-generate deterministic repository-navigation probes from repository_map proposals.
-- eval reports now include Context ROI and use schemaVersion 2.
-
-No re-parse or re-mine is required when upgrading from V0.5.2.

@@ -1,8 +1,0 @@
-ContextGym v0.5.1
-
-Windows verifier reliability fix:
-- Prefer --verify-file FILE over --verify COMMAND.
-- --verify-file executes a .ps1 directly on Windows (or a shell script on Unix), avoiding native argv quote loss.
-- Failed runs now print verifier exit code/stdout/stderr tails and exact changed-file lists.
-
-No session re-parse or re-mine is required when upgrading from v0.5.0.
